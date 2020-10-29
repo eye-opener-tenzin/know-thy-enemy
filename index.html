@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Inline Events</title>
+    <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+    <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <h1 onclick="h1btn()">Inline Events Suck...</h1>
+    <button onclick="btn()" id="btn">Click Me</button>
+    <script>
+      
+      function h1btn() {
+         console.log(document.querySelector("h1").innerText = 'boo')
+          
+      };
+      
+      
+      function btn() {
+            const btnclick = document.querySelector("#btn");
+         console.log(btnclick.innerText = "clicked")
+      }
+    
+    
+    </script>
+</body>
+
+</html>
